@@ -1,0 +1,19 @@
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">WordCount</th>
+      <th scope="col">Decsription</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr *ngFor="let page of pageListy">
+      <td>{{page.title}}</td>
+      <td>{{page.wordcount}}</td>
+      <td [innerHTML]="page.snippet"></td>
+    </tr>
+
+  </tbody>
+</table>
